@@ -1,11 +1,7 @@
 package co.edu.upb.Estructuras.Grafo;
 
-
-import co.edu.upb.Estructuras.ListaEnlazadaDoble.Inferface.NodeInterface;
 import co.edu.upb.Estructuras.ListaEnlazadaDoble.LinkedList;
-import co.edu.upb.Estructuras.ListaEnlazadaDoble.DoubleListNode;
 import java.io.Serializable;
-import java.util.Iterator;
 
 public class NodoGrafo implements Serializable {
 

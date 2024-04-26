@@ -26,7 +26,7 @@ public class Arista implements Serializable {
 
     @Override
     public String toString(){
-        return "(" + root + "-" + destino + ")";
-        //return "  (" + peso + ") " + root + "-" + destino;
+        //return "(" + root + "-" + destino + ")";
+        return "  (" + peso + ") " + root + "-" + destino;
     }
 }

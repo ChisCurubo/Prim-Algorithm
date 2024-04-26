@@ -6,7 +6,6 @@ import co.edu.upb.Estructuras.ListaEnlazadaDoble.Inferface.NodeInterface;
 import java.util.Iterator;
 import java.util.Random;
 
-
 public class Grafo {
     private LinkedList<NodoGrafo> grafo;
 
@@ -15,7 +14,6 @@ public class Grafo {
         cargarGrafo();
     }
     public void cargarGrafo(){
-
         NodoGrafo A = new NodoGrafo("A");
         NodoGrafo B = new NodoGrafo("B");
         NodoGrafo C = new NodoGrafo("C");
@@ -66,9 +64,6 @@ public class Grafo {
         this.grafo.add(I);
         this.grafo.add(J);
         this.grafo.add(K);
-
-
-
     }
 
     private int nodosVisitados;
@@ -266,14 +261,15 @@ public class Grafo {
 
     public void prim(String nombreNodoInicial){
         if (!grafo.isEmpty()){
-            Prim prim = new Prim();
-            NodoGrafo tree = prim.prim(nodeOf(nombreNodoInicial));
-            System.out.println(tree + " ");
-            tree.getConexiones().imprimir();
-            rutaDFS(tree);
-            resetearEstadoDeVisita();
+            NodoGrafo tree = nodeOf(nombreNodoInicial);
+            if (tree != null){
+                Prim prim = new Prim();
+                tree = prim.prim(nodeOf(nombreNodoInicial));
+                rutaDFS(tree);
+                resetearEstadoDeVisita();
+            }
+            else System.out.println("Nodo no encontrado.");
         }
     }
-
 
 }

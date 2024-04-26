@@ -10,23 +10,23 @@ public class Main {
         //grafo.imprimirGrafo();
 
         grafo.prim("C");
-        System.out.println("---");
+        System.out.println("--- Grafo ---");
         grafo.imprimirGrafo();
 
 
-
-/*
-(C-K)
-(K-A)
-(A-I)
-(I-H)
-(K-B)
-(B-E)
-(E-G)
-(K-J)
-(G-F)
-(C-D)
- */
+        //C  K  A  I  H  B  E  G  F  J  D
+        /*
+        (C-K)
+        (K-A)
+        (A-I)
+        (I-H)
+        (K-B)
+        (B-E)
+        (E-G)
+        (K-J)
+        (G-F)
+        (C-D)
+         */
     }
 
 }
